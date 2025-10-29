@@ -43,7 +43,14 @@ venv
 
 # CI output
 compliance.xml
-*.txt
+
+# Specific text files to exclude (build artifacts and logs)
+*_warnings.txt
+*_doc.log
+doc/*_warnings.txt
+doc/*_doc.log
+
+# But keep requirements and configuration files
 !requirements*.txt
 !tools-versions*.txt
 

@@ -71,4 +71,4 @@ west update --narrow -o=--depth=1
 
 ## More Information
 
-See [.devcontainer/README.md](.devcontainer/README.md) for complete documentation.
+See [README.md](README.md) for complete documentation.
