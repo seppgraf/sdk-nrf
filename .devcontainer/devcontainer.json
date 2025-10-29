@@ -1,0 +1,86 @@
+{
+	"name": "nRF Connect SDK Development",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": {
+			"VERSION": "${localEnv:TOOLCHAIN_VERSION:latest}"
+		}
+	},
+	"remoteUser": "vscode",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"lextudio.restructuredtext",
+				"trond-snekvik.simple-rst",
+				"swyddfa.esbonio",
+				"eamodio.gitlens",
+				"nordic-semiconductor.nrf-devicetree",
+				"nordic-semiconductor.nrf-kconfig",
+				"ms-vscode.hexeditor",
+				"redhat.vscode-yaml"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"icon": "terminal-bash"
+					}
+				},
+				"cmake.configureOnOpen": false,
+				"C_Cpp.default.compilerPath": "/opt/ncs/toolchains/current/bin/arm-zephyr-eabi-gcc",
+				"python.defaultInterpreterPath": "/usr/bin/python3",
+				"restructuredtext.confPath": "${workspaceFolder}/doc/nrf"
+			}
+		}
+	},
+	"forwardPorts": [8000, 9090],
+	"portsAttributes": {
+		"8000": {
+			"label": "Documentation Server",
+			"onAutoForward": "notify"
+		},
+		"9090": {
+			"label": "Debug Server",
+			"onAutoForward": "silent"
+		}
+	},
+	"containerEnv": {
+		"ACCEPT_JLINK_LICENSE": "1",
+		"ZEPHYR_BASE": "/workspaces/${localWorkspaceFolderBasename}/zephyr",
+		"NCS_BASE": "/workspaces/${localWorkspaceFolderBasename}"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"configureZshAsDefaultShell": false,
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": true
+		}
+	},
+	"postCreateCommand": "bash /workspaces/${localWorkspaceFolderBasename}/.devcontainer/post-create.sh",
+	"postStartCommand": "echo 'nRF Connect SDK Development Container Ready!'",
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
+	"runArgs": [
+		"--privileged"
+	],
+	"remoteEnv": {
+		"PATH": "/opt/ncs/toolchains/current/bin:${containerEnv:PATH}"
+	}
+}
