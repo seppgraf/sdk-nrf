@@ -1,0 +1,53 @@
+# Git and version control
+.git
+.gitignore
+.gitattributes
+
+# Build artifacts
+build
+build-*
+build_*
+*.o
+*.d
+*.cmd
+*.pyc
+*.swp
+*.swo
+*~
+
+# Documentation build artifacts
+doc/_build
+doc/nrf/_doxygen/
+doc/nrf/_samples/
+doc/*_warnings.txt
+doc/*_doc.log
+
+# IDE and editor files
+.vscode
+.idea
+.project
+.cproject
+
+# Python virtual environments
+.venv
+venv
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Test output
+.sanity-out*
+.twister-out*
+
+# CI output
+compliance.xml
+*.txt
+!requirements*.txt
+!tools-versions*.txt
+
+# Downloaded files
+ext/lib/bin/supl
+ext/lib/bin/libsupl.zip
+ext/BSEC_*
