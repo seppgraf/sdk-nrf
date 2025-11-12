@@ -54,7 +54,7 @@
 
   <!-- Libraries & Services Layer -->
   <rect x="50" y="230" width="900" height="50" class="box-header"/>
-  <text x="500" y="262" class="text-header">Libraries & Services</text>
+  <text x="500" y="262" class="text-header">Libraries &amp; Services</text>
   
   <!-- Protocol Libraries -->
   <rect x="70" y="290" width="270" height="140" class="box-dark"/>
@@ -76,7 +76,7 @@
   
   <!-- Utilities -->
   <rect x="650" y="290" width="270" height="140" class="box-dark"/>
-  <text x="785" y="308" class="text-center" font-weight="bold">Utilities & Services</text>
+  <text x="785" y="308" class="text-center" font-weight="bold">Utilities &amp; Services</text>
   <text x="660" y="328" class="text-normal">• Settings Storage</text>
   <text x="660" y="348" class="text-normal">• Secure Storage</text>
   <text x="660" y="368" class="text-normal">• Shell</text>
@@ -85,7 +85,7 @@
 
   <!-- Middleware Layer -->
   <rect x="50" y="450" width="900" height="50" class="box-header"/>
-  <text x="500" y="482" class="text-header">Middleware & RTOS</text>
+  <text x="500" y="482" class="text-header">Middleware &amp; RTOS</text>
   
   <!-- Zephyr RTOS -->
   <rect x="70" y="510" width="420" height="160" class="box-dark"/>
@@ -99,7 +99,7 @@
   
   <!-- Security & Bootloader -->
   <rect x="510" y="510" width="410" height="160" class="box-dark"/>
-  <text x="715" y="530" class="text-center" font-weight="bold">Security & Boot</text>
+  <text x="715" y="530" class="text-center" font-weight="bold">Security &amp; Boot</text>
   <text x="520" y="555" class="text-normal">• TF-M (Trusted Firmware-M)</text>
   <text x="520" y="575" class="text-normal">• PSA Crypto API</text>
   <text x="520" y="595" class="text-normal">• nRF Security (mbedTLS)</text>
@@ -113,7 +113,7 @@
   
   <!-- HAL Components -->
   <rect x="70" y="750" width="270" height="140" class="box-darker"/>
-  <text x="205" y="768" class="text-center" font-weight="bold">HAL & Drivers</text>
+  <text x="205" y="768" class="text-center" font-weight="bold">HAL &amp; Drivers</text>
   <text x="80" y="788" class="text-normal">• CRACEN Crypto Driver</text>
   <text x="80" y="808" class="text-normal">• GRTC (Timer)</text>
   <text x="80" y="828" class="text-normal">• GPIOTE</text>
@@ -131,7 +131,7 @@
   
   <!-- Memory & Storage -->
   <rect x="650" y="750" width="270" height="140" class="box-darker"/>
-  <text x="785" y="768" class="text-center" font-weight="bold">Memory & Storage</text>
+  <text x="785" y="768" class="text-center" font-weight="bold">Memory &amp; Storage</text>
   <text x="660" y="788" class="text-normal">• RRAM (Resistive RAM)</text>
   <text x="660" y="808" class="text-normal">• KMU (Key Management Unit)</text>
   <text x="660" y="828" class="text-normal">• ZMS (Zephyr Memory Storage)</text>
