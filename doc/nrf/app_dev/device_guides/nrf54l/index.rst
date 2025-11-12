@@ -76,6 +76,7 @@ This self-paced course introduces the hardware architecture, functionality, capa
    :maxdepth: 2
    :caption: Subpages:
 
+   architecture
    zms
    cryptography
    vpr_flpr
