@@ -46,7 +46,7 @@ Key features include:
 * Fast Pair integration
 * BLE-based services and profiles
 
-For more information, see the :ref:`ug_ble` documentation.
+For more information, see the :ref:`ug_bt` documentation.
 
 Thread
 ======
@@ -117,7 +117,7 @@ Utilities and services
 Supporting utilities and system services:
 
 * **Settings Storage** - Persistent configuration storage
-* **Secure Storage** - Protected data storage using :ref:`ug_secure_storage`
+* **Secure Storage** - Protected data storage using :ref:`trusted_storage_readme`
 * **Shell** - Command-line interface for debugging
 * **Logging** - System-wide logging framework
 * **Tracing** - Performance analysis and debugging
@@ -267,5 +267,5 @@ For more information about developing with the nRF54LM20, see the following page
 * :ref:`building_nrf54l` - Building and programming instructions
 * :ref:`ug_nrf54l_cryptography` - Cryptography and security features
 * :ref:`vpr_flpr_nrf54l` - Working with the FLPR core
-* :ref:`kmu_basics` - Key Management Unit usage
-* :ref:`ug_nrf54l_developing_fota_update` - Firmware over-the-air updates
+* :ref:`ug_nrf54l_developing_basics_kmu` - Key Management Unit usage
+* :ref:`ug_nrf54l_developing_ble_fota` - Firmware over-the-air updates
